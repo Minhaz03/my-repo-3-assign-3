@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rinterio</title>
 
     <!-- DaisyUI+Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -18,6 +18,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'book-primary': '#ABEF5F',
                     }
                 }
             }
@@ -39,7 +40,85 @@
 </head>
 
 <body class="manrope">
-    
+    <header class="md:container md:mx-auto mt-10">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start ml-5">
+                    <i class="fa-solid fa-arrow-right -rotate-45 bg-book-primary rounded-3xl p-2 mr-3"></i>
+                    <a class="font-bold text-3xl">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#494949] text-xl">Home</a></li>
+                        <li><a class="text-[#737373] text-xl">Services</a></li>
+                        <li><a class="text-[#737373] text-xl">Portfolio</a></li>
+                        <li><a class="text-[#737373] text-xl">Blogs</a></li>
+                        <li><a class="text-[#737373] text-xl">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end hidden md:inline-flex">
+                    <i class=" fa-solid fa-magnifying-glass mr-3 bg-[#a76969] p-2 rounded-full text-white"></i>
+                    <i class="fa-solid fa-cart-shopping mr-3 bg-[#a76969] p-2 rounded-full text-white"></i>
+                    <a class="btn bg-book-primary text-black rounded-3xl font-bold text-xl">Book Consult
+                        <i class="fa-solid fa-arrow-right -rotate-45 rounded-3xl bg-black text-white p-2"></i></a>
+                </div>
+                  <div class="dropdown md:hidden ml-24">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h7" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-24 p-2 shadow">
+                      <li><a class="text-[#494949]">Home</a></li>
+                        <li><a class="text-[#737373]">Services</a></li>
+                        <li><a class="text-[#737373]">Portfolio</a></li>
+                        <li><a class="text-[#737373]">Blogs</a></li>
+                        <li><a class="text-[#737373]">Contact Us</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+
+        <section class="mt-10 mb-10">
+            <div>
+                <div class="text-center">
+                  <div>
+                    <div class="flex justify-center items-center">
+                      <img class="w-80" src="/assets/banner.png" alt="">
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                    <p class="text-xl py-6 ">
+                      The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                    </p>
+                    <a class="btn rounded-full bg-[#ABEF5F]"
+                        >View Details
+                        <div>
+                          <i
+                            class="fa-solid fa-arrow-up rotate-45 flex h-7 w-7 bg-green-500 rounded-full items-center justify-center text-black"
+                          ></i>
+                        </div>
+                      </a>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </header>
+
+    <main>
+
+    </main>
 
 </body>
 
